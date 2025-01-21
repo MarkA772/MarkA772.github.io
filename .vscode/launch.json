@@ -7,8 +7,12 @@
     {
       "type": "chrome",
       "request": "launch",
-      "name": "Launch Chrome against localhost",
-      "runtimeArgs": ["--disable-web-security", "${cwd}\\index.html"]
+      "name": "Launch Index.html with Chrome",
+      "runtimeArgs": [
+        "--disable-web-security",
+        "--proxy-server=\"foo:8080\"",
+        "${cwd}\\index.html"
+      ]
     }
   ]
 }
