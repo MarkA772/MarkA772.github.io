@@ -1,20 +1,49 @@
+<!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
     <title>Semantic Element Cheatsheet</title>
     <link rel="stylesheet" href="index.css" />
-    <script src="index.mjs" type="module" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
   </head>
   <body>
-    <h1>My Personal Semantic Element Cheatsheet</h1>
-    <p>
-      I'll list out all the html elements on mdn (<a
-        href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element"
-        >https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a
-      >) in a format that I prefer.
-    </p>
-    <p>
-      My goal is to use less divs and spans and more semantic elements to
-      achieve the same structure.
-    </p>
+    <header><h1>HTML Semantic Alternatives</h1></header>
+    <main lang="en-US">
+      <menu>
+        <li>
+          <button
+            class="section-button"
+            onClick="genElements('Div Replacements', 'divs')"
+          >
+            Div Replacements (and other blocks)
+          </button>
+        </li>
+        <li>
+          <button
+            class="section-button"
+            onClick="genElements('Span Replacements', 'spans')"
+          >
+            Span Replacements (and other inlines)
+          </button>
+        </li>
+      </menu>
+      <section class="data-container">
+        <header class="data-header"></header>
+        <div class="cols">
+          <div class="left-data"></div>
+          <div class="right-data"></div>
+        </div>
+      </section>
+      <p>
+        I'll list out all the html elements on mdn (<a
+          href="https://developer.mozilla.orghttps://developer.mozilla.org/en-US/docs/Web/HTML/Element"
+          >https://developer.mozilla.org/en-US/docs/Web/HTML/Element</a
+        >) in a format that I prefer.
+      </p>
+      <p>
+        My goal is to use less divs and spans and more semantic elements to
+        achieve the same structure.
+      </p>
+    </main>
   </body>
 </html>
